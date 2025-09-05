@@ -1,0 +1,31 @@
+{
+    "scenarios": [
+        {
+            "id": "email_attachment",
+            "title": "Malicious Email Attachment",
+            "difficulty": "intermediate",
+            "file_type": ".exe",
+            "warning_signs": [
+                "Executable file from unknown sender",
+                "Antivirus detection",
+                "Urgent invoice theme"
+            ]
+        }
+    ],
+    "education": {
+        "prevention": [
+            "Keep backups updated and offline",
+            "Update software regularly",
+            "Use reputable antivirus",
+            "Be cautious with email attachments",
+            "Limit user privileges"
+        ],
+        "response": [
+            "Immediately isolate infected systems",
+            "Do not pay ransom demands",
+            "Contact IT support",
+            "Restore from clean backups",
+            "Report to authorities"
+        ]
+    }
+}

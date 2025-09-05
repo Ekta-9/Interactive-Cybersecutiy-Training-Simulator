@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Awareness Game - Data Breach Simulator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Navigation Header -->
+        <header id="main-header">
+            <div class="header-content">
+                <h1>🛡️ Cyber Awareness Game</h1>
+                <div id="progress-display">
+                    <span>Score: <span id="current-score">0</span></span>
+                    <span>Level: <span id="current-level">1</span></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Game Area -->
+        <main id="game-container">
+            <!-- Landing Screen -->
+            <div id="landing-screen" class="screen active">
+                <div class="welcome-content">
+                    <h2>Welcome to Cyber Security Training</h2>
+                    <p>Learn to identify and handle cyber threats through interactive scenarios</p>
+                    <div class="scenario-selection">
+                        <button class="scenario-btn" data-scenario="phishing">
+                            📧 Email Phishing
+                        </button>
+                        <button class="scenario-btn" data-scenario="ransomware">
+                            🔒 Ransomware Attack
+                        </button>
+                        <button class="scenario-btn" data-scenario="databreach">
+                            💾 Data Breach
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Screen -->
+            <div id="game-screen" class="screen">
+                <div id="scenario-container">
+                    <!-- Dynamic scenario content will be loaded here -->
+                </div>
+                
+                <div id="feedback-area">
+                    <!-- Feedback messages appear here -->
+                </div>
+
+                <div id="action-buttons">
+                    <button id="next-btn" class="action-btn" style="display: none;">Next</button>
+                    <button id="restart-btn" class="action-btn" style="display: none;">Restart Scenario</button>
+                    <button id="home-btn" class="action-btn">Back to Menu</button>
+                </div>
+            </div>
+
+            <!-- Quiz Screen -->
+            <div id="quiz-screen" class="screen">
+                <div id="quiz-container">
+                    <!-- Quiz content will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Results Screen -->
+            <div id="results-screen" class="screen">
+                <div id="results-container">
+                    <!-- Results will be displayed here -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Modal for detailed feedback -->
+        <div id="feedback-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div id="modal-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/ProgressTracker.js"></script>
+    <script src="js/UIManager.js"></script>
+    <script src="js/QuizManager.js"></script>
+    <script src="js/scenarios/BaseScenario.js"></script>
+    <script src="js/scenarios/PhishingScenario.js"></script>
+    <script src="js/scenarios/RansomwareScenario.js"></script>
+    <script src="js/scenarios/DataBreachScenario.js"></script>
+    <script src="js/ScenarioManager.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

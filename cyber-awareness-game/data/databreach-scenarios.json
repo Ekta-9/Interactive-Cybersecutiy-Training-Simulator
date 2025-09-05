@@ -1,0 +1,31 @@
+
+{
+    "scenarios": [
+        {
+            "id": "retail_breach",
+            "title": "Online Retailer Data Breach",
+            "difficulty": "beginner",
+            "affected_data": [
+                "Email addresses",
+                "Encrypted passwords", 
+                "Names",
+                "Phone numbers"
+            ],
+            "company_response": "Immediate password reset recommended"
+        }
+    ],
+    "education": {
+        "immediate_actions": [
+            "Change passwords immediately",
+            "Enable two-factor authentication",
+            "Monitor account activity",
+            "Check for password reuse"
+        ],
+        "long_term_protection": [
+            "Regular credit monitoring",
+            "Identity theft protection",
+            "Credit report freezes",
+            "Account alerts setup"
+        ]
+    }
+}

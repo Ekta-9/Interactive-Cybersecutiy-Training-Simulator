@@ -1,0 +1,34 @@
+{
+    "scenarios": [
+        {
+            "id": "bank_phishing",
+            "title": "Banking Phishing Email",
+            "difficulty": "beginner",
+            "sender": "security@youbank-alert.com",
+            "subject": "🚨 URGENT: Account Security Alert",
+            "indicators": [
+                "Suspicious domain",
+                "Urgency tactics", 
+                "Generic greeting",
+                "Threatening language"
+            ]
+        }
+    ],
+    "education": {
+        "red_flags": [
+            "Urgent language and threats",
+            "Generic greetings",
+            "Suspicious sender domains",
+            "Unexpected attachments",
+            "Requests for sensitive information"
+        ],
+        "best_practices": [
+            "Verify sender through official channels",
+            "Hover over links before clicking",
+            "Look for spelling and grammar errors",
+            "Check for personalization",
+            "When in doubt, don't click"
+        ]
+    }
+}
+
